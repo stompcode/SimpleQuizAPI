@@ -46,7 +46,11 @@ namespace QuizAPI.Controllers
         public ActionResult<Question> Create([Bind("quizId,TheQuestion,CorrectAnswer,FalseAnswers")] Question question)
         {
             var quiz = _quizService.Get(question.QuizId);
-            if (!isLoggedIn() || HttpContext.Request.Cookies["currentUser"] != quiz.CreatedById)
+            if (quiz == null)
+            {
+                return NotFound();
+            }
+            else if (!isLoggedIn() || HttpContext.Request.Cookies["currentUser"] != quiz.CreatedById)
             {
                 return Unauthorized();
             }
