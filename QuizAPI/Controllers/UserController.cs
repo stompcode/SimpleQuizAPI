@@ -141,7 +141,9 @@ namespace QuizAPI.Controllers
 
         private Boolean isLoggedIn()
         {
-            if (HttpContext.Request.Cookies["currentUser"].HasValue())
+            String currentUser = HttpContext.Request.Cookies["currentUser"];
+            var user = _userService.Get(currentUser);
+            if (currentUser.HasValue() && user != null)
             {
                 return true;
             }

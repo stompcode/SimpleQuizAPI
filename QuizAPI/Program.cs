@@ -26,25 +26,14 @@ namespace QuizAPI
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddEnvironmentVariables();
 
-            if (isDevelopment) //only add secrets in development
-            {
-                builder.AddUserSecrets<Authentication>();
-            }
-
+            //Builds the config
             Configuration = builder.Build();
-
-            var services = new ServiceCollection()
-               .Configure<Authentication>(Configuration.GetSection(nameof(Authentication)))
-               .AddOptions()
-               .BuildServiceProvider();
-
-            services.GetService<Authentication>();
 
             CreateHostBuilder(args).Build().Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+            Host.CreateDefaultBuilder(args) // Automatically adds user secrets when in development mode
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

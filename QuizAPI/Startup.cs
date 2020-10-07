@@ -31,13 +31,14 @@ namespace QuizAPI
         {
             var auth = new Authentication();
             auth.PassSalt = Configuration["PassSalt"];
+
             services.Configure<QuizStoreDatabaseSettings>(
                 Configuration.GetSection(nameof(QuizStoreDatabaseSettings)));
 
             services.AddSingleton<IQuizStoreDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<QuizStoreDatabaseSettings>>().Value);
 
-            services.AddSingleton<Authentication>(auth);
+            services.AddSingleton(auth);
             services.AddSingleton<UserService>();
             services.AddSingleton<QuizService>();
             services.AddSingleton<QuestionService>();
@@ -56,10 +57,6 @@ namespace QuizAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
-            app.UseCookiePolicy();
-            app.UseAuthentication();
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
