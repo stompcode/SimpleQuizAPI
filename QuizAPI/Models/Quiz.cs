@@ -18,5 +18,6 @@ namespace QuizAPI.Models
         public String QuizName { get; set; }
         public List<String> Questions { get; set; }
         public String CreatedById { get; set; }
+        public int Favorited { get; set; }
     }
 }

@@ -31,6 +31,7 @@ namespace QuizAPI
         {
             var auth = new Authentication();
             auth.PassSalt = Configuration["PassSalt"];
+            auth.EmailPass = Configuration["EmailPass"];
 
             services.Configure<QuizStoreDatabaseSettings>(
                 Configuration.GetSection(nameof(QuizStoreDatabaseSettings)));

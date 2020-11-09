@@ -27,5 +27,16 @@ C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\obj\Debug\netcoreapp3.1\QuizAPI.dl
 C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\obj\Debug\netcoreapp3.1\QuizAPI.pdb
 C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\obj\Debug\netcoreapp3.1\QuizAPI.genruntimeconfig.cache
 C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\RestSharp.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\obj\Debug\netcoreapp3.1\QuizAPI.csproj.CoreCompileInputs.cache
 C:\Users\Asbjorn\source\repos\QuizAPI\QuizAPI\obj\Debug\netcoreapp3.1\QuizAPI.MvcApplicationPartsAssemblyInfo.cache
